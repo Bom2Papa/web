@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
   <title>Document</title>
   <style media="screen">
     h1 {
-      background-color : LightBlue; 
+      background-color : LightBlue;
     }
   </style>
 
@@ -15,5 +16,11 @@
 <body>
   <h1>git hub web page</h1>
   <p>test paragraph</p>
+
+  <h1>전달받은 데이터</h1>
+  <ul>
+      <li>키워드: <%= request.getParameter("keyWord") %></li>
+  </ul>
+
 </body>
 </html>
